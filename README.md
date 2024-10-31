@@ -19,4 +19,6 @@ index.html: O arquivo principal de entrada do seu projeto. Nele contém o conte�
 
 - js/: Armazena o arquivo scripts.js, que contém a lógica de JavaScript necessária para adicionar interatividade à página.
 
+- Midia/: Armazena os aúdios escolhidos e baixados na pasta de download para ser utilizados no site.
+
 - Seção de usuário: Há uma parte do projeto focada no usuário, com uma estrutura semelhante à da Infrastructure, mas contendo novos arquivos HTML. Isso indica uma divisão funcional clara no meu projeto, onde diferentes seções (como público geral e área de usuário) possuem seus próprios recursos e arquivos.

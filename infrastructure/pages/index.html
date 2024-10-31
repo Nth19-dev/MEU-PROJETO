@@ -2,22 +2,23 @@
 <html lang="pt-BR"> <!-- Define o documento como HTML5 e a língua como português do Brasil. -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8. -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Faz a página ser responsiva em diferentes dispositivos. -->
     <title>Início do Projeto</title> <!-- Título da página exibido na aba do navegador. -->
 
-    <!-- Link para o favicon do site -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon"> <!-- Caminho para o favicon. -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Link para o favicon do site. -->
 
     <!-- Estilos internos da página -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            /* Define a fonte padrão. */
+            /* Define a fonte padrão da página. */
             background-color: #f0f8ff;
             /* Define a cor de fundo da página. */
             display: flex;
+            /* Utiliza flexbox para organizar o conteúdo. */
             justify-content: center;
             /* Centraliza o conteúdo horizontalmente. */
             align-items: center;
@@ -30,11 +31,11 @@
 
         .container {
             text-align: center;
-            /* Centraliza o texto no container. */
+            /* Centraliza o texto dentro do container. */
             background-color: #fff;
-            /* Fundo branco no container. */
+            /* Define o fundo branco para o container. */
             padding: 30px;
-            /* Espaçamento interno do container. */
+            /* Define o espaçamento interno do container. */
             border-radius: 10px;
             /* Arredonda os cantos do container. */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -43,7 +44,7 @@
 
         h1 {
             color: #333;
-            /* Define a cor do título. */
+            /* Define a cor do título principal. */
         }
 
         p {
@@ -53,19 +54,49 @@
 
         .date {
             font-style: italic;
-            /* Deixa a data em itálico. */
+            /* Deixa a data em itálico para ênfase. */
             color: #888;
-            /* Cor cinza clara para a data. */
+            /* Define uma cor cinza clara para a data. */
+        }
+
+        /* CSS para organizar os links lado a lado */
+        .links {
+            display: flex;
+            /* Utiliza flexbox para organizar os links em linha. */
+            gap: 20px;
+            /* Define o espaçamento entre os links. */
+            justify-content: center;
+            /* Centraliza os links horizontalmente. */
+            margin-top: 20px;
+            /* Adiciona um espaço acima dos links. */
+        }
+
+        .links a {
+            text-decoration: none;
+            /* Remove o sublinhado dos links. */
+            color: #007acc;
+            /* Define a cor do texto dos links. */
+            font-weight: bold;
+            /* Torna o texto dos links em negrito. */
+        }
+
+        .links a:hover {
+            color: #005b99;
+            /* Muda a cor do link quando o mouse passa por cima. */
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Container central com o conteúdo principal da página -->
-    <div class="container">
+    <div class="container"> <!-- Container para centralizar o conteúdo da página. -->
         <h1>Bem-vindo ao meu Projeto!</h1> <!-- Título principal da página. -->
-        <a href="/infrastructure/pages/atividade-3.html">Link Atividade 3</a> <!--Link para proxima pagina-->
+
+        <div class="links"> <!-- Container para os links. -->
+            <a href="/infrastructure/pages/atividade-3.html">Link Atividade 3</a> <!-- Link para a Atividade 3. -->
+            <a href="/infrastructure/pages/sandbox.html">Link Sandbox</a> <!-- Link para a página Sandbox. -->
+        </div>
+
         <p>Este é o início de tudo o que ocorrerá pela frente neste projeto individual.</p>
         <!-- Texto explicativo do projeto. -->
         <p class="date">Data de início: 16 de Outubro de 2024</p> <!-- Data estilizada. -->
